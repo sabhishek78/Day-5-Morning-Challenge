@@ -22,8 +22,36 @@
 //  ]
 //
 // squarePatch(0) should print []
+squarePatch(int n)
+{
+  List x=[];
+  for(int i=0;i<n;i++)
+     {x.add(n);}
+  List newList=[];
+  for(int i=0;i<n;i++)
+     {
+       newList.add(x);
+     }
+  //print(newList);
+  print("[");
+  for(int i=0;i<n;i++)
+  {
+    print(newList[i]);
+
+  }
+  print("}");
+}
+printBoard(List<List<String>> x)
+{
+print('   A      B    C');
+print('1  ${x[0][0]}   | ${x[0][1]}  | ${x[0][2]}');
+print('2  ${x[1][0]}   | ${x[1][1]}  | ${x[1][2]}');
+print('3  ${x[2][0]}   | ${x[2][1]}  | ${x[2][2]}');
+print("-------------------");
+}
 
 main() {
+  squarePatch(4);
 
   List<List<String>> board = [
     ['O', ' ', ' '],
@@ -49,6 +77,8 @@ main() {
   // 2    | X |
   //   ---+---+---
   // 3  X |   |
+
+
 }
 
 // Write a function called 'printBoard' which takes a List of List of Strings,
